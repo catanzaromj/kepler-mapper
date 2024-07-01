@@ -14,8 +14,8 @@ readme = "README.md"
 authors = [
   { name = "HJ van Veen", email = "info@mlwave.com" },
   { name = "Nathaniel Saul", email = "nat@riverasaul.com" },
-  { name = "David Eargle", email = "" },
-  { name = "Sam Mangham", email = "" },
+  { name = "David Eargle", email = "dave@daveeargle.com" },
+  { name = "Sam Mangham", email = "s.mangham@soton.ac.uk" },
 ]
 maintainers = [
   { name = "Nathaniel Saul", email = "nat@riverasaul.com" },
@@ -23,12 +23,7 @@ maintainers = [
   { name = "Michael Catanzaro", email = "catanzaromj@pm.me" },
 ]
 
-dependencies = [
-"Jinja2",
-  "numpy",
-  "scipy",
-  "scikit-learn",
-]
+dependencies = ["Jinja2", "numpy", "scipy", "scikit-learn"]
 
 classifiers = [
   "Development Status :: 4 - Alpha",
@@ -51,9 +46,26 @@ keywords = [
 ]
 
 [project.optional-dependencies]
-testing = ["igraph", "ipywidgets", "matplotlib", "networkx", "pytest", "pytest-cov"]
+testing = [
+  "igraph",
+  "ipywidgets",
+  "matplotlib",
+  "networkx",
+  "pytest",
+  "pytest-cov",
+]
 
-docs = ["igraph", "ipywidgets", "matplotlib", "networkx", "pytest-cov","pandas", "sphinx", "sktda_docs_config", "sphinx-gallery"]
+docs = [
+  "igraph",
+  "ipywidgets",
+  "matplotlib",
+  "networkx",
+  "pytest-cov",
+  "pandas",
+  "sphinx",
+  "sktda_docs_config",
+  "sphinx-gallery",
+]
 
 [project.urls]
 Homepage = "https://kepler-mapper.scikit-tda.org"

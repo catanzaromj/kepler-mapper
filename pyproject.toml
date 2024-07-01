@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["kepler-mapper"]
+
+[project]
+name = "kmapper"
+dynamic = ["version"]
+requires-python = ">= 3.8"
+description = "Python implementation of Mapper algorithm for Topological Data Analysis."
+readme = "README.md"
+authors = [
+  { name = "HJ van Veen", email = "info@mlwave.com" },
+  { name = "Nathaniel Saul", email = "nat@riverasaul.com" },
+  { name = "David Eargle", email = "" },
+  { name = "Sam Mangham", email = "" },
+]
+maintainers = [
+  { name = "Nathaniel Saul", email = "nat@riverasaul.com" },
+  { name = "Chris Tralie", email = "chris.tralie@gmail.com" },
+  { name = "Michael Catanzaro", email = "catanzaromj@pm.me" },
+]
+
+dependencies = [
+"Jinja2",
+  "numpy",
+  "scipy",
+  "scikit-learn",
+]
+
+classifiers = [
+  "Development Status :: 4 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Education",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Intended Audience :: Healthcare Industry",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+]
+
+keywords = [
+  "mapper",
+  "topological data analysis",
+  "algebraic topology",
+  "unsupervised learning",
+  "machine learning",
+]
+
+[project.optional-dependencies]
+testing = ["igraph", "ipywidgets", "matplotlib", "networkx", "pytest", "pytest-cov"]
+
+docs = ["igraph", "ipywidgets", "matplotlib", "networkx", "pytest-cov","pandas", "sphinx", "sktda_docs_config", "sphinx-gallery"]
+
+[project.urls]
+Homepage = "https://kepler-mapper.scikit-tda.org"
+Documentation = "https://kepler-mapper.scikit-tda.org"
+Repository = "https://github.com/scikit-tda/kepler-mapper"
+Issues = "https://github.com/scikit-tda/kepler-mapper/issues"
+Changelog = "https://github.com/scikit-tda/kepler-mapper/blob/master/RELEASE.txt"
